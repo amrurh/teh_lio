@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lio's Luo Han Guo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- Section 1: Landing Page (Full Screen) -->
+    <section id="home" class="h-screen w-full flex flex-col bg-home relative">
+        
+        <!-- Main content container -->
+        <div class="relative z-10 flex flex-1 flex-col md:flex-row items-center justify-around w-full p-8 gap-8">
+            
+            <!-- Left Column: Title and Subtitle -->
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white">TEH LIO'S<br>LUO HAN GUO</h1>
+                <p class="text-lg md:text-2xl text-white">An Authentic Herbal Infusion</p>
+            </div>
+    
+            <!-- Middle Column: Image Placeholder -->
+            <div class="my-8 md:my-0">
+                <img src="/assets/img/tea.webp" alt="Luo Han Guo Drink" class="max-h-[50vh] drop-shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/300x500/34495E/FFFFFF?text=Image+Not+Found';">
+            </div>
+    
+            <!-- Right Column: Motto -->
+            <div class="text-center md:text-right">
+                <p class="text-2xl md:text-4xl font-semibold italic text-white">"Sip the tradition,<br>taste the wellness."</p>
+            </div>
+    
+        </div>
+
+        <!-- Flavour and Scroll Section -->
+        <div class="relative z-10 pb-10">
+            <!-- Flavours List -->
+            <div class="flex justify-center items-center flex-wrap space-x-4 md:space-x-8 mb-4 text-white px-4">
+                <span class="flavour-item flavour-original" data-tooltip="The classic, authentic taste.">Original</span>
+                <span class="flavour-item flavour-blackcurrant" data-tooltip="Sweet and tangy berry notes.">Blackcurrant</span>
+                <span class="flavour-item flavour-lecy" data-tooltip="Exotic, floral, and sweet.">Lecy</span>
+                <span class="flavour-item flavour-lemon" data-tooltip="Zesty, citrusy, and refreshing.">Lemon</span>
+                <span class="flavour-item flavour-thai-tea" data-tooltip="Creamy, spiced, and aromatic.">Thai tea</span>
+                <span class="flavour-item flavour-green-tea" data-tooltip="Earthy, light, and calming.">Green tea</span>
+            </div>
+
+            <!-- Scroll down indicator -->
+            <a href="#about" class="text-white inline-block w-full text-center animate-gentle-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+                <span class="text-sm">Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Marquee Banner 1 (Right to Left) -->
+    <div class="marquee-banner">
+        <div class="marquee-content scroll-left">
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+        </div>
+        <div class="marquee-content scroll-left" aria-hidden="true">
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+            <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
+        </div>
+    </div>
+
+    <!-- Section 2: About Carousel (Full Screen) -->
+    <section id="about" class="h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-about">
+        <div class="carousel-container max-w-5xl">
+            <div class="carousel-track">
+                <!-- Slide 1: History -->
+                <div class="carousel-slide">
+                    <div class="text-center p-8">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">Our History</h2>
+                        <p class="text-base md:text-xl text-white leading-relaxed">
+                            Lio's journey began in the serene mountains of Guilin, China, the native home of the Luo Han Guo fruit. For generations, our family has perfected the art of brewing this traditional remedy, a secret passed down through time. We bring this ancient wellness tradition from our home to yours.
+                        </p>
+                    </div>
+                </div>
+                <!-- Slide 2: What is Luo Han Guo? -->
+                <div class="carousel-slide">
+                    <div class="text-center p-8">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">What is Luo Han Guo?</h2>
+                        <p class="text-base md:text-xl text-white leading-relaxed">
+                            Also known as Monk Fruit, Luo Han Guo is a small, green gourd that has been used for centuries in Eastern medicine. It's prized for its natural, zero-calorie sweetness, which comes from unique antioxidants called mogrosides, making it a healthy alternative to sugar.
+                        </p>
+                    </div>
+                </div>
+                <!-- Slide 3: Benefits -->
+                <div class="carousel-slide">
+                    <div class="text-center p-8">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">The Benefits</h2>
+                        <p class="text-base md:text-xl text-white leading-relaxed">
+                            Our tea is more than just a refreshing drink. It's known to soothe sore throats, reduce phlegm, and support respiratory health. Packed with antioxidants, it helps fight free radicals in the body, offering a delicious way to embrace a healthier lifestyle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dot Navigation -->
+        <div class="carousel-nav">
+            <div class="dots-track"></div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner 2 (Left to Right) -->
+    <div class="marquee-banner">
+        <div class="marquee-content scroll-right">
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+        </div>
+        <div class="marquee-content scroll-right" aria-hidden="true">
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+            <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
+        </div>
+    </div>
+
+    <!-- Section 3: Split Screen -->
+    <section id="split-section" class="h-screen w-full grid grid-cols-1 md:grid-cols-2 text-white">
+        <!-- Left Column -->
+        <div class="grid grid-rows-2">
+            <!-- Top-Left -->
+            <div class="bg-split-left-top">
+                <!-- Image is now a background in CSS -->
+            </div>
+            <!-- Bottom-Left -->
+            <div class="bg-split-left-bottom relative overflow-hidden">
+                <div class="vertical-marquee">
+                    <div class="vertical-marquee-content">
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                    </div>
+                    <div class="vertical-marquee-content" aria-hidden="true">
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                        <h1>TASTE</h1>
+                        <h2>THE FLAVOUR</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div class="bg-split-right flex items-center justify-center p-8">
+            <h2 class="text-4xl md:text-6xl font-bold text-center">Made with love,<br>for you.</h2>
+        </div>
+    </section>
+
+    <!-- Section 4: Reversed Split Screen -->
+    <section id="split-section-2" class="h-screen w-full grid grid-cols-1 md:grid-cols-2 text-white">
+        <!-- Left Column -->
+        <div class="bg-split-2-left flex items-center justify-center p-8">
+            <h2 class="text-4xl md:text-6xl font-bold text-center">100% Organic<br>Ingredients.</h2>
+        </div>
+        <!-- Right Column -->
+        <div class="grid grid-rows-2">
+            <!-- Top-Right -->
+            <div class="bg-split-2-right-top">
+                <!-- Image is now a background in CSS -->
+            </div>
+            <!-- Bottom-Right -->
+            <div class="bg-split-2-right-bottom relative overflow-hidden">
+                <div class="vertical-marquee vertical-marquee-2">
+                    <div class="vertical-marquee-content">
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                    </div>
+                    <div class="vertical-marquee-content" aria-hidden="true">
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                        <h1>NATURAL</h1>
+                        <h2>ICED TEA</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner 3 (Right to Left) -->
+    <div class="marquee-banner marquee-banner-3">
+        <div class="marquee-content scroll-left">
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+        </div>
+        <div class="marquee-content scroll-left" aria-hidden="true">
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+            <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-heading">Lio's Luo Han Guo</h3>
+                <p>Authentic herbal infusions, crafted with tradition and care.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10.01 10.01 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Us</h3>
+                <p>123 Herbal Lane, Bota, Perak</p>
+                <p>Email: contact@lios.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Lio's Luo Han Guo. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- Link to the external JS file -->
+    <script src="/assets/js/script.js" defer></script>
+
+</body>
+</html>
