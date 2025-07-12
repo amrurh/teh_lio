@@ -6,38 +6,30 @@
     <title>Lio's Luo Han Guo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <!-- Section 1: Landing Page (Full Screen) -->
     <section id="home" class="h-screen w-full flex flex-col bg-home relative">
         
-        <!-- Main content container -->
         <div class="relative z-10 flex flex-1 flex-col md:flex-row items-center justify-around w-full p-8 gap-8">
             
-            <!-- Left Column: Title and Subtitle -->
             <div class="text-center md:text-left">
                 <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white">TEH LIO'S<br>LUO HAN GUO</h1>
                 <p class="text-lg md:text-2xl text-white">An Authentic Herbal Infusion</p>
             </div>
     
-            <!-- Middle Column: Image Placeholder -->
             <div class="my-8 md:my-0">
-                <img src="/assets/img/tea.webp" alt="Luo Han Guo Drink" class="max-h-[50vh] drop-shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/300x500/34495E/FFFFFF?text=Image+Not+Found';">
+                <img src="assets/img/tea.webp" alt="Luo Han Guo Drink" class="max-h-[50vh] drop-shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/300x500/34495E/FFFFFF?text=Image+Not+Found';">
             </div>
     
-            <!-- Right Column: Motto -->
             <div class="text-center md:text-right">
                 <p class="text-2xl md:text-4xl font-semibold italic text-white">"Sip the tradition,<br>taste the wellness."</p>
             </div>
     
         </div>
 
-        <!-- Flavour and Scroll Section -->
         <div class="relative z-10 pb-10">
-            <!-- Flavours List -->
             <div class="flex justify-center items-center flex-wrap space-x-4 md:space-x-8 mb-4 text-white px-4">
                 <span class="flavour-item flavour-original" data-tooltip="The classic, authentic taste.">Original</span>
                 <span class="flavour-item flavour-blackcurrant" data-tooltip="Sweet and tangy berry notes.">Blackcurrant</span>
@@ -47,7 +39,6 @@
                 <span class="flavour-item flavour-green-tea" data-tooltip="Earthy, light, and calming.">Green tea</span>
             </div>
 
-            <!-- Scroll down indicator -->
             <a href="#about" class="text-white inline-block w-full text-center animate-gentle-bounce">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -57,7 +48,6 @@
         </div>
     </section>
 
-    <!-- Marquee Banner 1 (Right to Left) -->
     <div class="marquee-banner">
         <div class="marquee-content scroll-left">
             <span><em><strong>Refresh your day. Feel the wellness.</strong></em></span>
@@ -73,11 +63,9 @@
         </div>
     </div>
 
-    <!-- Section 2: About Carousel (Full Screen) -->
     <section id="about" class="h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-about">
         <div class="carousel-container max-w-5xl">
             <div class="carousel-track">
-                <!-- Slide 1: History -->
                 <div class="carousel-slide">
                     <div class="text-center p-8">
                         <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">Our History</h2>
@@ -86,7 +74,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Slide 2: What is Luo Han Guo? -->
                 <div class="carousel-slide">
                     <div class="text-center p-8">
                         <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">What is Luo Han Guo?</h2>
@@ -95,7 +82,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Slide 3: Benefits -->
                 <div class="carousel-slide">
                     <div class="text-center p-8">
                         <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #FCC01A;">The Benefits</h2>
@@ -106,13 +92,11 @@
                 </div>
             </div>
         </div>
-        <!-- Dot Navigation -->
         <div class="carousel-nav">
             <div class="dots-track"></div>
         </div>
     </section>
 
-    <!-- Marquee Banner 2 (Left to Right) -->
     <div class="marquee-banner">
         <div class="marquee-content scroll-right">
             <span><em><strong>Sip the tradition. Taste the wellness.</strong></em></span>
@@ -128,15 +112,10 @@
         </div>
     </div>
 
-    <!-- Section 3: Split Screen -->
     <section id="split-section" class="h-screen w-full grid grid-cols-1 md:grid-cols-2 text-white">
-        <!-- Left Column -->
         <div class="grid grid-rows-2">
-            <!-- Top-Left -->
             <div class="bg-split-left-top">
-                <!-- Image is now a background in CSS -->
-            </div>
-            <!-- Bottom-Left -->
+                </div>
             <div class="bg-split-left-bottom relative overflow-hidden">
                 <div class="vertical-marquee">
                     <div class="vertical-marquee-content">
@@ -162,25 +141,18 @@
                 </div>
             </div>
         </div>
-        <!-- Right Column -->
         <div class="bg-split-right flex items-center justify-center p-8">
             <h2 class="text-4xl md:text-6xl font-bold text-center">Made with love,<br>for you.</h2>
         </div>
     </section>
 
-    <!-- Section 4: Reversed Split Screen -->
     <section id="split-section-2" class="h-screen w-full grid grid-cols-1 md:grid-cols-2 text-white">
-        <!-- Left Column -->
         <div class="bg-split-2-left flex items-center justify-center p-8">
             <h2 class="text-4xl md:text-6xl font-bold text-center">100% Organic<br>Ingredients.</h2>
         </div>
-        <!-- Right Column -->
         <div class="grid grid-rows-2">
-            <!-- Top-Right -->
             <div class="bg-split-2-right-top">
-                <!-- Image is now a background in CSS -->
-            </div>
-            <!-- Bottom-Right -->
+                </div>
             <div class="bg-split-2-right-bottom relative overflow-hidden">
                 <div class="vertical-marquee vertical-marquee-2">
                     <div class="vertical-marquee-content">
@@ -208,7 +180,6 @@
         </div>
     </section>
 
-    <!-- Marquee Banner 3 (Right to Left) -->
     <div class="marquee-banner marquee-banner-3">
         <div class="marquee-content scroll-left">
             <span><em><strong>LOVE IT? LET US KNOW!</strong></em></span>
@@ -224,7 +195,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -258,8 +228,7 @@
     </footer>
 
 
-    <!-- Link to the external JS file -->
-    <script src="/assets/js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 
 </body>
 </html>
