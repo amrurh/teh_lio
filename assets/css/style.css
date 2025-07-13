@@ -10,6 +10,7 @@ body {
     color: #FFFFFF; /* White text as requested */
     /* Prevent text selection while dragging the carousel */
     user-select: none;
+    overflow-x: hidden;
 }
 
 /* Fixed Logo */
