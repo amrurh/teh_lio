@@ -351,6 +351,13 @@ body {
     position: relative;
 }
 
+@media (max-width: 767px) {
+  .bg-split-left-top,
+  .bg-split-2-right-top {
+    height: 400px; /* This will now work correctly */
+  }
+}
+
 .vertical-marquee {
     position: absolute;
     width: 100%;
@@ -369,7 +376,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .vertical-marquee-content h1 {
