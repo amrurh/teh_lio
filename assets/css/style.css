@@ -26,6 +26,18 @@ body {
     /* border-radius: 50%; */
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .fixed-logo {
+        top: 10px;
+        left: 10px;
+    }
+
+    .fixed-logo img {
+        width: 50px;
+    }
+}
+
 /* Custom class for the home section background */
 .bg-home {
     background-color: #EA5901; /* Fallback */
@@ -315,7 +327,7 @@ body {
 }
 
 .bg-split-right {
-    background-color: #34495E; /* Dark blue */
+    background-color: #EFE9DA; /* Dark blue */
 }
 
 /* Reversed Split Section Styles */
