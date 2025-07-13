@@ -12,6 +12,20 @@ body {
     user-select: none;
 }
 
+/* Fixed Logo */
+.fixed-logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.fixed-logo img {
+    width: 100px;
+    height: auto;
+    /* border-radius: 50%; */
+}
+
 /* Custom class for the home section background */
 .bg-home {
     background-color: #EA5901; /* Fallback */
