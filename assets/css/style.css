@@ -1,19 +1,15 @@
-/* Basic styling for smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    /* Using the dark blue from the palette as the primary background */
     background-color: #34495E; 
-    color: #FFFFFF; /* White text as requested */
-    /* Prevent text selection while dragging the carousel */
+    color: #FFFFFF;
     user-select: none;
     overflow-x: hidden;
 }
 
-/* Fixed Logo */
 .fixed-logo {
     position: fixed;
     top: 30px;
@@ -23,11 +19,9 @@ body {
 
 .fixed-logo img {
     width: 100px;
-    height: auto;
-    /* border-radius: 50%; */
+    height: auto; 
 }
 
-/* Responsive styles for mobile */
 @media (max-width: 768px) {
     .fixed-logo {
         top: 10px;
@@ -39,22 +33,18 @@ body {
     }
 }
 
-/* Custom class for the home section background */
 .bg-home {
-    background-color: #EA5901; /* Fallback */
-    background-image: radial-gradient(ellipse at center, #f09364, #EA5901); /* Brighter middle */
+    background-color: #EA5901;
+    background-image: radial-gradient(ellipse at center, #f09364, #EA5901);
 }
 
-/* Custom class for the about section background */
 .bg-about {
-    background-color: #4E8FCC; /* Brighter blue */
+    background-color: #4E8FCC;
 }
 
-
-/* Custom bounce animation with lower height */
 @keyframes gentle-bounce {
     0%, 100% {
-        transform: translateY(-15%); /* Bounces less high */
+        transform: translateY(-15%);
         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
     50% {
@@ -67,27 +57,25 @@ body {
     animation: gentle-bounce 1.5s infinite;
 }
 
-/* Flavour styles */
 .flavour-item {
-    position: relative; /* Crucial for positioning the tooltip */
+    position: relative;
     display: inline-block;
     padding: 0.25rem 0.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-    margin-bottom: 0.5rem; /* Added margin for spacing */
+    margin-bottom: 0.5rem;
 }
 
 .flavour-item:hover {
     transform: rotate(-3deg);
 }
 
-/* Underline effect */
 .flavour-item::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #FCC01A; /* accent-yellow */
+    background-color: #FCC01A;
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -100,7 +88,6 @@ body {
     transform-origin: bottom left;
 }
 
-/* Tooltip container */
 .tooltip {
     position: absolute;
     bottom: 120%;
@@ -109,9 +96,9 @@ body {
     padding: 0.5rem;
     border-radius: 0.5rem;
     text-align: center;
-    width: 150px; /* Give it a fixed width */
+    width: 150px;
     
-    /* Hide by default */
+   
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -128,7 +115,7 @@ body {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
     margin: 0 auto 0.5rem;
     border: 2px solid #FFFFFF;
 }
@@ -136,53 +123,49 @@ body {
 .tooltip p {
     font-size: 0.875rem;
     margin: 0;
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal;
 }
 
-
-/* Individual Tooltip Colors */
 .flavour-original .tooltip {
-    background-color: #FCC01A; /* Yellow */
-    color: #1E2A77; /* Dark Blue */
+    background-color: #FCC01A;
+    color: #1E2A77;
 }
 
 .flavour-blackcurrant .tooltip {
-    background-color: #8e44ad; /* Purple */
-    color: #FFFFFF; /* White */
+    background-color: #8e44ad;
+    color: #FFFFFF;
 }
 
 .flavour-lecy .tooltip {
-    background-color: #FF6B6B; /* Pink-Red */
-    color: #FFFFFF; /* White */
+    background-color: #FF6B6B;
+    color: #FFFFFF;
 }
 
 .flavour-lemon .tooltip {
-    background-color: #F1C40F; /* Bright Yellow */
-    color: #000000; /* Black */
+    background-color: #F1C40F;
+    color: #000000;
 }
 
 .flavour-thai-tea .tooltip {
-    background-color: #D35400; /* Burnt Orange */
-    color: #FFFFFF; /* White */
+    background-color: #D35400;
+    color: #FFFFFF;
 }
 
 .flavour-green-tea .tooltip {
-    background-color: #187D70; /* Dark Green */
-    color: #FFFFFF; /* White */
+    background-color: #187D70;
+    color: #FFFFFF;
 }
 
 .flavour-jasmine .tooltip {
-    background-color: #f3e5ab; /* Off-white */
-    color: #34495E; /* Dark Blue */
+    background-color: #f3e5ab;
+    color: #34495E;
 }
 
-
-/* Marquee Banner Styles */
 .marquee-banner {
     width: 100%;
     overflow: hidden;
-    background-color: #FCC01A; /* Yellow accent */
-    color: #1E2A77; /* Dark blue text for contrast */
+    background-color: #FCC01A;
+    color: #1E2A77;
     padding: 1rem 0;
     display: flex;
 }
@@ -198,15 +181,14 @@ body {
     animation-name: scroll-right;
 }
 
-/* Third marquee banner specific style */
 .marquee-banner-3 {
     background-color: #34495E;
     color: #FFFFFF;
 }
 
 .marquee-banner-4 {
-    background-color: #4E8FCC; /* Brighter blue */
-    color: #FFFFFF; /* White text for contrast */
+    background-color: #4E8FCC;
+    color: #FFFFFF;
 }
 
 .marquee-banner:hover .marquee-content {
@@ -214,7 +196,7 @@ body {
 }
 
 .marquee-content span {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     padding: 0 2rem;
     white-space: nowrap;
 }
@@ -237,11 +219,9 @@ body {
     }
 }
 
-
-/* Carousel Styles */
 .carousel-container {
     width: 100%;
-    overflow: hidden; /* This is crucial */
+    overflow: hidden;
     cursor: grab;
 }
 
@@ -262,7 +242,6 @@ body {
     justify-content: center;
 }
 
-/* Dot Navigation Styles */
 .carousel-nav {
     position: relative;
     width: 120px;
@@ -271,7 +250,6 @@ body {
     margin: 2rem auto 0;
 }
 
-/* Fade-out effect for dot navigation */
 .carousel-nav::before,
 .carousel-nav::after {
     content: '';
@@ -285,13 +263,13 @@ body {
 
 .carousel-nav::before {
     left: 0;
-    /* Gradient must match the section's background color (#4E8FCC) */
+   
     background: linear-gradient(to right, #4E8FCC, rgba(78, 143, 204, 0));
 }
 
 .carousel-nav::after {
     right: 0;
-    /* Gradient must match the section's background color (#4E8FCC) */
+   
     background: linear-gradient(to left, #4E8FCC, rgba(78, 143, 204, 0));
 }
 
@@ -307,7 +285,7 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #1E2A77; /* Using a darker blue from the palette for inactive dots */
+    background-color: #1E2A77;
     margin: 0 10px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -316,11 +294,10 @@ body {
 }
 
 .carousel-dot.active {
-    background-color: #FFFFFF; /* Using white for the active dot for better contrast on blue */
+    background-color: #FFFFFF;
     transform: scale(1.5);
 }
 
-/* Split Section Styles */
 .bg-split-left-top {
     background-image: url('../img/section1.jpg');
     background-size: cover;
@@ -328,17 +305,16 @@ body {
 }
 
 .bg-split-left-bottom {
-    background-color: #E74C3C; /* Red accent */
-    position: relative; /* Establish positioning context */
+    background-color: #E74C3C;
+    position: relative;
 }
 
 .bg-split-right {
-    background-color: #EFE9DA; /* 34495E Dark blue */
+    background-color: #EFE9DA;
 }
 
-/* Reversed Split Section Styles */
 .bg-split-2-left {
-    background-color: #007062; /* medium green */
+    background-color: #007062;
 }
 
 .bg-split-2-right-top {
@@ -348,14 +324,14 @@ body {
 }
 
 .bg-split-2-right-bottom {
-    background-color: #63B338; /* light green */
+    background-color: #63B338;
     position: relative;
 }
 
 @media (max-width: 767px) {
   .bg-split-left-top,
   .bg-split-2-right-top {
-    height: 400px; /* This will now work correctly */
+    height: 400px;
   }
 }
 
@@ -381,29 +357,27 @@ body {
 }
 
 .vertical-marquee-content h1 {
-    font-size: 6rem; /* 96px */
+    font-size: 6rem;
     font-weight: bold;
-    color: #FCC01A; /* Yellow accent */
+    color: #FCC01A;
     line-height: 1;
 }
 
 .vertical-marquee-content h2 {
-    font-size: 2.25rem; /* 36px */
+    font-size: 2.25rem;
     font-weight: bold;
     color: #FFFFFF;
     line-height: 1;
     margin-bottom: 2rem;
 }
 
-/* Specific styles for the second marquee */
 .vertical-marquee-2 .vertical-marquee-content h1 {
-    color: #FFFFFF; /* White */
+    color: #FFFFFF;
 }
 
 .vertical-marquee-2 .vertical-marquee-content h2 {
-    color: #007062; /* Medium Green */
+    color: #007062;
 }
-
 
 @keyframes scroll-up {
     from {
@@ -414,9 +388,8 @@ body {
     }
 }
 
-/* Location Section */
 #location-section {
-    background-color: #f0f2f5; /* Keeps the light gray border around the image */
+    background-color: #f0f2f5;
 }
 
 .location-image-wrapper {
@@ -428,13 +401,13 @@ body {
 
 .location-image-container {
     width: 100%;
-    max-width: 400px; /* Limit the width of the phone-like frame */
+    max-width: 400px;
     aspect-ratio: 9 / 16;
     background-image: url('../img/cart.jpeg');
     background-size: cover;
     background-position: center;
-    border-radius: 2rem; /* Rounded corners for the container */
-    overflow: hidden; /* This is key */
+    border-radius: 2rem;
+    overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -443,11 +416,11 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background-color: #FCC01A; /* Main background changed to Accent Yellow */
+    background-color: #FCC01A;
 }
 
 .location-details h2 {
-    color: #1E2A77; /* Text changed to Dark Blue for contrast */
+    color: #1E2A77;
 }
 
 .route-list {
@@ -455,7 +428,7 @@ body {
 }
 
 .route-item {
-    background-color: #E74C3C; /* Item background changed to Dark Blue */
+    background-color: #E74C3C;
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin-bottom: 1rem;
@@ -464,35 +437,33 @@ body {
 .route-item h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FFFFFF; /* Text changed to White for contrast */
+    color: #FFFFFF;
     margin-bottom: 0.5rem;
 }
 
 .route-item p {
     font-size: 1rem;
-    color: #E0E0E0; /* Kept as light gray, which reads well on blue */
+    color: #E0E0E0;
 }
 
-/* Responsive adjustments for the Location Section */
 @media (max-width: 767px) {
     #location-section {
-        /* All padding is removed from the parent section */
+       
     }
 
     .location-image-wrapper {
-        /* We move the top padding here and set the others */
+       
         padding: 1rem 1rem 1rem;
     }
 
     .location-details {
-        /* This rule stays the same */
+       
         padding: 2rem 1rem 4rem; 
     }
 }
 
-/* Footer Styles */
 .footer {
-    background-color: #1E2A77; /* Darkest Blue */
+    background-color: #1E2A77;
     color: #FFFFFF;
     padding: 4rem 2rem;
 }
