@@ -41,7 +41,7 @@ body {
 /* Custom class for the home section background */
 .bg-home {
     background-color: #EA5901; /* Fallback */
-    background-image: radial-gradient(ellipse at center, #F0824D, #EA5901); /* Brighter middle */
+    background-image: radial-gradient(ellipse at center, #f09364, #EA5901); /* Brighter middle */
 }
 
 /* Custom class for the about section background */
@@ -201,6 +201,11 @@ body {
 .marquee-banner-3 {
     background-color: #34495E;
     color: #FFFFFF;
+}
+
+.marquee-banner-4 {
+    background-color: #4E8FCC; /* Brighter blue */
+    color: #FFFFFF; /* White text for contrast */
 }
 
 .marquee-banner:hover .marquee-content {
@@ -398,6 +403,82 @@ body {
     }
     to {
         transform: translateY(-100%);
+    }
+}
+
+/* Location Section */
+#location-section {
+    background-color: #f0f2f5; /* Keeps the light gray border around the image */
+}
+
+.location-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.location-image-container {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the phone-like frame */
+    aspect-ratio: 9 / 16;
+    background-image: url('../img/cart.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem; /* Rounded corners for the container */
+    overflow: hidden; /* This is key */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #FCC01A; /* Main background changed to Accent Yellow */
+}
+
+.location-details h2 {
+    color: #1E2A77; /* Text changed to Dark Blue for contrast */
+}
+
+.route-list {
+    margin-top: 1.5rem;
+}
+
+.route-item {
+    background-color: #E74C3C; /* Item background changed to Dark Blue */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.route-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF; /* Text changed to White for contrast */
+    margin-bottom: 0.5rem;
+}
+
+.route-item p {
+    font-size: 1rem;
+    color: #E0E0E0; /* Kept as light gray, which reads well on blue */
+}
+
+/* Responsive adjustments for the Location Section */
+@media (max-width: 767px) {
+    #location-section {
+        /* All padding is removed from the parent section */
+    }
+
+    .location-image-wrapper {
+        /* We move the top padding here and set the others */
+        padding: 1rem 1rem 1rem;
+    }
+
+    .location-details {
+        /* This rule stays the same */
+        padding: 2rem 1rem 4rem; 
     }
 }
 
