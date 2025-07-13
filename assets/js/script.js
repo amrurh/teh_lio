@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Autoscroll ---
     const startAutoScroll = () => {
         stopAutoScroll(); // Prevent multiple intervals
-        autoScrollInterval = setInterval(() => moveToSlide(currentIndex + 1), 4000);
+        autoScrollInterval = setInterval(() => moveToSlide(currentIndex + 1), 10000);
     };
     const stopAutoScroll = () => clearInterval(autoScrollInterval);
 
