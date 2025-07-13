@@ -316,7 +316,7 @@ body {
 
 /* Split Section Styles */
 .bg-split-left-top {
-    background-image: url('../img/section1.jpeg');
+    background-image: url('../img/section1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -336,7 +336,7 @@ body {
 }
 
 .bg-split-2-right-top {
-    background-image: url('../img/section2.jpeg');
+    background-image: url('../img/section2.jpg');
     background-size: cover;
     background-position: center;
 }
